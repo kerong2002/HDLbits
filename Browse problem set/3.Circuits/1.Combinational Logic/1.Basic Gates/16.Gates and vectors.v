@@ -8,6 +8,6 @@ module top_module(
 
 assign out_both = in[3:1] & in[2:0];
 assign out_any  = in[3:1] | in[2:0];
-assign out_different = {in[0],in[2:1]} ^ in[2:0];
+assign out_different = {in[0],in[3:1]} ^ in[3:0];
 
 endmodule
