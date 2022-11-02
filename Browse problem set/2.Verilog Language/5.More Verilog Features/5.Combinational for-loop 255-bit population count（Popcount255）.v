@@ -2,7 +2,7 @@
 //Combinational for-loop: 255-bit population count（Popcount255）
 module top_module( 
     input [254:0] in,
-    output [7:0] out );
+    output reg [7:0] out );
 
 integer i;
 always @(*) begin
