@@ -3,7 +3,7 @@
 module top_module (
     input clk,
     input w, R, E, L,
-    output Q
+    output reg Q
 );
 
 always @(posedge clk)begin

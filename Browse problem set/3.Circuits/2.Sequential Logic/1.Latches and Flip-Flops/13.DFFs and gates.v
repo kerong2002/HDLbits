@@ -3,7 +3,7 @@
 module top_module (
     input clk,
     input x,
-    output z
+    output reg z
 ); 
 reg [2:0] Q;
 always @(posedge clk) begin
@@ -12,6 +12,6 @@ always @(posedge clk) begin
     Q[2] <= x ^ Q[2];
 end 
 
-assign z <= ~(|Q);
+assign z = ~(|Q);
 
 endmodule

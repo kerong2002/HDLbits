@@ -3,7 +3,7 @@
 module top_module (
     input clk,
     input in, 
-    output out);
+    output reg out);
 
 always @(posedge clk)begin
     out <= in ^ out;
