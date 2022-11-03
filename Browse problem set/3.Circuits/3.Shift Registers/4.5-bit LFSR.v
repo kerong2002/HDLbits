@@ -11,7 +11,7 @@ always @(posedge clk)begin
         q <= 5'h1;
     end
     else begin
-        q = {q[0],q[4],q[3] ^ q[0],q[2:1]};
+        q <= {q[0],q[4],q[3] ^ q[0],q[2:1]};
     end
 end
 
